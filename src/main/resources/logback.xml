@@ -7,6 +7,7 @@
         </encoder>
     </appender>
      <!-- redirection vers un fichier -->
+     <!-- Envoi un message dans le fichier file de niveau debug -->
      <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>app.log</file>
         <append>true</append>
@@ -19,7 +20,7 @@
     <logger name="dev.console" level="INFO">
         <appender-ref ref="STDOUT" />
     </logger>
-    <!-- règle de logs par défaut. Ici : niveau INFO vers la sortie standard -->
+    <!-- règle de logs par défaut. Ici : niveau debug vers la sortie standard : file -->
     <root level="DEBUG">
         <appender-ref ref="FILE" />
     </root>

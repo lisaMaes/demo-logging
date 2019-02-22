@@ -5,7 +5,11 @@ import org.slf4j.LoggerFactory;
 
 import dev.service.AppService;
 
-
+/**
+ * Appelle les logs
+ * @author Diginamic
+ *
+ */
 public class App {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(App.class);
@@ -14,6 +18,8 @@ public class App {
 		
 		LOG.info("Bonjour SLF4J !");
 		LOG.info("Implémentation Logback");
+		
+
 		new AppService().executer("valeur 1");
 	}
 	
